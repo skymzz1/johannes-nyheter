@@ -1,18 +1,16 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: #f7f7f7;
-  color: #333333;
+  background: #ffffff;
+  color: #9e7171;
 }
 
 .main-navigations {
-  background: linear-gradient(90deg, #e20303 70%, #7e2d2d 100%);
+  background-color: #FFEEAA;
   width: 100%;
   min-height: 65px;
-  position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
 .nav-header {
@@ -31,14 +29,48 @@ body {
   gap: 16px;
 }
 
-.logo-spin {
-  height: 48px;
-  width: 48px;
-  animation: spin 4s linear infinite;
+.logo {
+  height: 50px;
+  width: auto;
 }
 
-@keyframes spin {
-  100% { transform: rotate(360deg); }
+.SØK {
+  height: 50px;
+  width: auto;;
+}
+
+.MENY {
+  height: 50px;
+  width: auto;;
+}
+
+.KONTAKT {
+  height: 50px;
+  width: auto;;
+}
+
+.OTHER {
+  height: 50px;
+  width: auto;;
+  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OM {
+  height: 50px;
+  width: auto;;
+}
+
+.HJEM {
+  height: 50px;
+  width: auto;;
+}
+
+.NYHETER {
+  height: 500px;
+  width: auto;;
 }
 
 .site-title {
@@ -67,12 +99,6 @@ body {
   font-weight: 500;
   padding: 8px 16px;
   border-radius: 4px;
-  transition: background 0.2s, color 0.2s;
-}
-
-.nav:hover {
-  background: rgba(255,255,255,0.18);
-  color: #e20303;
 }
 
 .wrapper {
@@ -80,42 +106,34 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: calc(100vh - 65px);
-  background: #e2e2e2;
+  background: #ffffff;
 }
 
 .content {
+  background-image: url('/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;;
+  height: 850px;
+  text-align: center;
+  padding-top: 50px;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 40px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  padding: 40px 32px;
 }
+
 
 .welcome-card {
   text-align: center;
+  height: 1000px;
 }
 
 .welcome-card h2 {
   margin-top: 0;
   color: #e20303;
-}
-
-.cta-btn {
-  margin-top: 24px;
-  padding: 12px 32px;
-  background: #e20303;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
 }
 
 .cta-btn:hover {
@@ -125,9 +143,7 @@ body {
 
 @media (max-width: 900px) {
   .nav-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+    gap: 90px;
     padding: 16px;
   }
   .main-navigations ul {
